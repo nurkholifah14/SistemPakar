@@ -14,7 +14,7 @@ class GejalakulitController extends Controller
      */
     public function index()
     {
-        $gejalakulit = Gejalakulit::orderBy('created_at', 'asc')->paginate(5);
+        $gejalakulit = Gejalakulit::orderBy('created_at', 'asc')->paginate(10);
         return view('admin.gejalakulit.datagejala', compact('gejalakulit'));
     }
 

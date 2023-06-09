@@ -18,7 +18,7 @@ class TreatmentController extends Controller
      */
     public function index()
     {
-        $treatment = Treatment::orderBy('created_at', 'desc')->paginate(10);
+        $treatment = Treatment::orderBy('created_at', 'asc')->paginate(10);
         return view('admin.treatment.datatreatment', compact('treatment'));
     }
 
@@ -91,7 +91,7 @@ class TreatmentController extends Controller
     public function update(Request $request, Treatment $treatment)
     {
         $rules = [
-            'kode_treatment' => 'required|unique:treatment,kode_treatment',
+            'kode_treatment' => 'required',
             'nama_treatment' => 'required|max:255',
             'gambar' => 'required|image|mimes:png,jpg,jpeg',
             'fungsi' => 'required|max:255',

@@ -25,6 +25,9 @@ use App\Http\Controllers\HistoryController;
 
 Route::group(["middleware" => ["can:user"]], function() {
     Route::resource('diagnosa', DiagnosaController::class);
+    Route::get('/hasil', function () {
+        return view('/diagnosa/hasil');
+    });
 });
 
 Route::get('/', function () {   

@@ -23,7 +23,7 @@
                             </div>
                             <div class="card-body">
                             
-                                <h5 class="card-title"><b>{{$gejala->nama_gejala}}</b></h5>
+                                <h5 class="card-title"><b>Apakah anda memiliki {{$gejala->nama_gejala}} ?</b></h5>
                                 
                                 <div class="form-group c0l-12">
                                
