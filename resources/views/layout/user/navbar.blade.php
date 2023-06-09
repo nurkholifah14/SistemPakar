@@ -26,8 +26,8 @@
           <li><a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="/">Home</a></li>
           <li class="dropdown"><a class="nav-link {{ request()->is('informasi') ? 'active' : '' }}" href="#"><span>Informasi</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a class="nav-link {{ request()->is('informasijk') ? 'active' : '' }}" href="/informasiJK">Jenis Kulit</a></li>
-              <li><a class="nav-link {{ request()->is('informasitreatment') ? 'active' : '' }}" href="/informasiTreatment">Treatment</a></li>
+              <li><a class="nav-link {{ request()->is('informasi-Jeniskulit') ? 'active' : '' }}" href="/informasi-JenisKulit">Jenis Kulit</a></li>
+              <li><a class="nav-link {{ request()->is('informasi-Treatment') ? 'active' : '' }}" href="/informasi-Treatment">Treatment</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link {{ request()->is('tentang') ? 'active' : '' }}" href="/tentang">Tentang</a></li>

@@ -22,6 +22,12 @@ class TreatmentController extends Controller
         return view('admin.treatment.datatreatment', compact('treatment'));
     }
 
+    public function treatment()
+    {
+        $treatment = Treatment::get();
+        return view('user.informasi.treatment', compact('treatment'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -93,7 +99,7 @@ class TreatmentController extends Controller
         $rules = [
             'kode_treatment' => 'required',
             'nama_treatment' => 'required|max:255',
-            'gambar' => 'required|image|mimes:png,jpg,jpeg',
+            'gambar' => 'image|mimes:png,jpg,jpeg',
             'fungsi' => 'required|max:255',
             'harga' => 'required',
             'deskripsi' => 'required|max:255',

@@ -1318,22 +1318,13 @@ section {
   box-sizing: content-box;
   padding: 30px;
   margin: 40px 30px;
-  box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+  box-shadow: 0px 0 20px rgba(19, 144, 211, 0.538);
   background: #fff;
   min-height: 320px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   transition: 0.3s;
-}
-
-.testimonials .testimonial-item .stars {
-  margin-bottom: 15px;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
 }
 
 .testimonials .testimonial-item .testimonial-img {

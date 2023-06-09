@@ -34,13 +34,11 @@ Route::get('/', function () {
     return view('/user/landingpage/landing');
 });
 
-Route::get('/informasiJK', function () {
+Route::get('/informasi-JenisKulit', function () {
     return view('/user/informasi/jeniskulit');
 });
 
-Route::get('/informasiTreatment', function () {
-    return view('/user/informasi/treatment');
-});
+Route::get('informasi-Treatment', [TreatmentController::class, 'treatment']);
 
 Route::get('/tentang', function () {
     return view('/user/tentang/index');
